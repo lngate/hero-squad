@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Hero</title>
+</head>
+<body>
+    <h1>Add Hero to Squad</h1>
+
+    <form method="post" action="/add-hero">
+        <label for="heroName">Hero Name:</label>
+        <input type="text" id="heroName" name="heroName" required><br>
+
+        <label for="heroAge">Hero Age:</label>
+        <input type="number" id="heroAge" name="heroAge" required><br>
+
+        <label for="specialPower">Special Power:</label>
+        <input type="text" id="specialPower" name="specialPower" required><br>
+
+        <label for="weakness">Weakness:</label>
+        <input type="text" id="weakness" name="weakness" required><br>
+
+        <label for="squadName">Select Squad:</label>
+        <select id="squadName" name="squadName">
+            <option value="Justice League">Justice League</option>
+            <option value="Avengers">Avengers</option>
+        </select><br>
+
+        <button type="submit">Add Hero</button>
+    </form>
+
+    <a href="/">Back to Squads</a>
+</body>
+</html>

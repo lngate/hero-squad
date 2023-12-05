@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Squad</title>
+</head>
+<body>
+    <h1>Hero Squads</h1>
+
+    #foreach($squad in $squads)
+        <h2>$squad.getName()</h2>
+        <p>Max Size: $squad.getMaxSize()</p>
+        <p>Cause: $squad.getCause()</p>
+
+        <h3>Heroes:</h3>
+        #foreach($hero in $squad.getHeroes())
+            <p>$hero.getName(), $hero.getAge(), $hero.getSpecialPower(), $hero.getWeakness()</p>
+        #end
+    #end
+
+    <a href="/add-hero">Add Hero</a>
+</body>
+</html>
